@@ -9,6 +9,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { Badge } from '@/components/ui/badge'
+import { RichTextEditor } from '@/components/rich-text-editor'
 import {
   Select,
   SelectContent,
@@ -258,12 +259,8 @@ export function PostEditor({ blog, selectedIdea, onClearIdea }: Props) {
           </div>
 
           <div className="space-y-1.5">
-            <Label>Article Body (HTML)</Label>
-            <Textarea
-              value={body}
-              onChange={(e) => setBody(e.target.value)}
-              className="font-mono text-xs min-h-[320px] max-h-[520px] overflow-y-auto resize-y"
-            />
+            <Label>Article Body</Label>
+            <RichTextEditor value={body} onChange={setBody} />
           </div>
 
           <div className="space-y-1.5">

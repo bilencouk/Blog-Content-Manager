@@ -130,6 +130,7 @@ export function AddBlogModal({ open, onClose, onCreated }: Props) {
               onChange={(e) => setDescription(e.target.value)}
               placeholder="What is this blog about? What does it aim to achieve? Be detailed — this shapes every article generated."
               rows={4}
+              className="max-h-[120px] overflow-y-auto resize-none"
             />
           </div>
 

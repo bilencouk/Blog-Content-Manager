@@ -104,7 +104,8 @@ export function EditBlogModal({ blog, open, onClose, onUpdated }: Props) {
             <Textarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              rows={5}
+              rows={4}
+              className="max-h-[120px] overflow-y-auto resize-none"
             />
           </div>
 

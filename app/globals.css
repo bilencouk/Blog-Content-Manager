@@ -130,3 +130,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Tiptap WYSIWYG editor content styles */
+.tiptap.ProseMirror {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: #111827;
+}
+.tiptap.ProseMirror h2 { font-size: 1.25rem; font-weight: 700; margin: 1em 0 0.4em; }
+.tiptap.ProseMirror h3 { font-size: 1.1rem; font-weight: 600; margin: 0.9em 0 0.35em; }
+.tiptap.ProseMirror p { margin: 0.5em 0; }
+.tiptap.ProseMirror ul, .tiptap.ProseMirror ol { padding-left: 1.5em; margin: 0.5em 0; }
+.tiptap.ProseMirror ul { list-style-type: disc; }
+.tiptap.ProseMirror ol { list-style-type: decimal; }
+.tiptap.ProseMirror li { margin: 0.2em 0; }
+.tiptap.ProseMirror blockquote { border-left: 3px solid #d1d5db; padding-left: 1em; color: #6b7280; margin: 0.75em 0; }
+.tiptap.ProseMirror hr { border: none; border-top: 1px solid #e5e7eb; margin: 1em 0; }
+.tiptap.ProseMirror strong { font-weight: 600; }
+.tiptap.ProseMirror em { font-style: italic; }
+.tiptap.ProseMirror a { color: #2563eb; text-decoration: underline; }
+.tiptap.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+  pointer-events: none;
+  float: left;
+  height: 0;
+}
