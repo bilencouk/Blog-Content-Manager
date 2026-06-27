@@ -35,8 +35,8 @@ Manage multiple blogs from one dashboard — generate AI-written posts with Deep
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/your-username/blog-content-manager.git
-cd blog-content-manager
+git clone https://github.com/bilencouk/Blog-Content-Manager.git
+cd Blog-Content-Manager
 npm install
 ```
 
